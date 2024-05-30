@@ -1,9 +1,12 @@
 from django.contrib import admin
 from django.urls import path
-from generos.views import genero_create_list_view,genero_detail_view
+from generos.views import GeneroCreateListView, GeneroRetrieveUpdateDestroyAPIView
+from atores.views import AtorCreateListView, AtorRetrieveUpdateDestroyAPIView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('generos/', genero_create_list_view, name='genero'),
-    path('generos/<int:pk>/', genero_detail_view, name='detail-genero')
+    path('generos/', GeneroCreateListView.as_view(), name='genero'),
+    path('generos/<int:pk>/', GeneroRetrieveUpdateDestroyAPIView.as_view(), name='detail-genero'),
+    path('atores/', AtorCreateListView.as_view(), name='atores'),
+    path('atores/<int:pk>/', AtorRetrieveUpdateDestroyAPIView.as_view(), name='detail-atores'),
 ]
