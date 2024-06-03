@@ -1,6 +1,6 @@
 from django.db import models
 
-NACIONALIDADES = (
+NACIONALIDADES_CHOICES = (
     ('USA', 'Estados Unidos da América'),
     ('BRA', 'Brasil'),
     ('DEU', 'Alemanha'),
@@ -21,7 +21,7 @@ class Ator(models.Model):
     data_nascimento = models.DateField(null=True, blank=True)
     nacionalidade = models.CharField(
         max_length=200,
-        choices=NACIONALIDADES,
+        choices=NACIONALIDADES_CHOICES,
         blank=True,
         null=True
         )
