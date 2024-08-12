@@ -2,7 +2,7 @@
 
 ## Descrição
 
-**Flix API** é uma API desenvolvida para simular um serviço de streaming de filmes. Utilizando SQLite3 como banco de dados e Django Rest Framework (DRF) para criar a API, o projeto permite gerenciar filmes, categorias e usuários de uma maneira eficiente e escalável.
+**Flix API** é uma API desenvolvida para simular um serviço de streaming de filmes. Utilizando SQLite3 como banco de dados e Django Rest Framework (DRF) para criar a API, o projeto permite gerenciar filmes, categorias e atores de uma maneira eficiente e escalável.
 
 ## Tecnologias
 
