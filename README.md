@@ -31,6 +31,7 @@
 Abra o terminal no VSCode e execute o seguinte comando para clonar o repositório:
 
 git clone https://github.com/LuizH0412/flix-api.git
+
 cd flix-api
 
 ## Endpoints
